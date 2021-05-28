@@ -1,5 +1,5 @@
 {
-  "name": "@wojtekmaj/react-daterange-picker",
+  "name": "@jasontk19/react-daterange-picker",
   "version": "3.1.0",
   "description": "A date range picker for your React app.",
   "main": "dist/entry.js",
@@ -86,5 +86,4 @@
     "type": "git",
     "url": "https://github.com/wojtekmaj/react-daterange-picker.git"
   },
-  "funding": "https://github.com/wojtekmaj/react-daterange-picker?sponsor=1"
 }
