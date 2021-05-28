@@ -82,7 +82,7 @@ export default class DateRangePicker extends PureComponent {
   }
 
   onFocus = (event) => {
-    const { disabled, onFocus } = this.props;
+    const { disabled, onFocus, hideCalenderOnInputFocus } = this.props;
 
     if (onFocus) {
       onFocus(event);
@@ -90,6 +90,11 @@ export default class DateRangePicker extends PureComponent {
 
     // Internet Explorer still fires onFocus on disabled elements
     if (disabled) {
+      return;
+    }
+
+    // Allow user to use input without opening the calendar
+    if (hideCalenderOnInputFocus) {
       return;
     }
 
@@ -359,6 +364,7 @@ DateRangePicker.propTypes = {
   dayPlaceholder: PropTypes.string,
   disableCalendar: PropTypes.bool,
   disabled: PropTypes.bool,
+  hideCalenderOnInputFocus: PropTypes.bool,
   format: PropTypes.string,
   isOpen: PropTypes.bool,
   locale: PropTypes.string,

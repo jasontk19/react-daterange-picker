@@ -97,6 +97,7 @@ Displays an input field complete with custom inputs, native input, and a calenda
 |disabled|Whether the date range picker should be disabled.|`false`|`true`|
 |disableCalendar|When set to `true`, will remove the calendar and the button toggling its visibility.|`false`|`true`|
 |format|Input format based on [Unicode Technical Standard #35](https://www.unicode.org/reports/tr35/tr35-dates.html#Date_Field_Symbol_Table). Supported values are: `y`, `M`, `MM`, `MMM`, `MMMM`, `d`, `dd`.|n/a|`"y-MM-dd"`|
+|hideCalenderOnInputFocus| Allows user to use text date input without triggering the calendar to open. |`false`|`true`|
 |isOpen|Whether the calendar should be opened.|`false`|`true`|
 |locale|Locale that should be used by the date range picker and the calendar. Can be any [IETF language tag](https://en.wikipedia.org/wiki/IETF_language_tag).|User's browser settings|`"hu-HU"`|
 |maxDate|Maximum date that the user can select. Periods partially overlapped by maxDate will also be selectable, although React-DateRange-Picker will ensure that no later date is selected.|n/a|Date: `new Date()`|
